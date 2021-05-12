@@ -1,0 +1,17 @@
+     1. SELECT `id`, `name`, `lastname`, `date_of_birth`, `document_type` FROM `ospiti` WHERE `document_type` = 'CI';
+
+2. SELECT `id`, `name`, `lastname`, `date_of_birth` FROM `ospiti` WHERE `date_of_birth` >= '1988';
+
+3. SELECT * FROM ospiti WHERE date_of_birth < '2001-05-08';
+
+4. SELECT `name`, `lastname` FROM `ospiti` WHERE `name` LIKE 'D%';
+
+5. SELECT SUM(price) AS 'Totrale Pagamenti Accettati' FROM pagamenti WHERE `status` = 'accepted';
+
+6. SELECT MAX(price) AS max FROM pagamenti;
+
+7. SELECT `name`, `lastname`, `date_of_birth`, `document_type` FROM `ospiti` WHERE `document_type` = 'Driver License' AND YEAR(`date_of_birth`) = '1975'
+
+8. SELECT COUNT(`ospite_id`) AS 'Totrale Paganti Ospiti' FROM paganti WHERE `ospite_id` <> 'null';
+
+9. SELECT COUNT(`beds`) AS 'Letti Totali' FROM `stanze`;4
